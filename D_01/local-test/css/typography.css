@@ -1,0 +1,30 @@
+html {overflow-y:hidden;}
+body {
+    margin:0;
+    min-height:100vh;
+    background:#fff;
+}
+/*브라우저 기본 설정값*/
+.body-default-font-setting {
+    font-size:16px;
+    line-height:120%; /*1.2*/
+    color:#000;
+    word-spacing: 0;
+    letter-spacing: 0;
+}
+.designed-font-setting {
+    font-family:"Spoqa Han Sans", Dotum, sans-serif;
+    font-size:14px; /*Old Browsers*/
+    font-size:0.875rem; /*moderen Browsers*/
+    line-height:1.5; /*%, em, rem*/
+    letter-spacing: -0.064em; /*1/1000em*/
+/*    letter-spacing: -1px 네이버의 경우 접근성 고려안하고 모든 브라우저동일하게 화면을 확대축소할때 고정값이기때문에 좋지 않다.*/
+    color:#222325;
+}
+/*body text + paragraph*/
+body .show-leading {
+    --leading:21px;
+    --leading-gradient:calc(var(--leading)-1px);
+    background:linear-gradient(180deg, transparent var(--leading-gradient), #491fa4 var(--leading-gradient));
+    background-size:1px 21px;
+}
